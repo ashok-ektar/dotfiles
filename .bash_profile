@@ -55,17 +55,17 @@ complete -W "NSGlobalDomain" defaults;
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
 
 # Ram's customizations
-export FLUTTER_HOME=${HOME}/softwares/flutter
+export FLUTTER_HOME=${HOME}/Softwares/flutter
 export ANDROID_HOME=${HOME}/Library/Android/sdk
 export PATH=./:${PATH}:/usr/local/bin:${FLUTTER_HOME}/bin:/opt/homebrew/opt/openjdk/bin:/opt/homebrew/bin:"/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 eval "$(/opt/homebrew/bin/brew shellenv)"
-export PATH=/opt/homebrew/opt/openjdk/bin:$HOME/softwares/flutter/bin:$PATH:/opt/homebrew/bin:
+export PATH=/opt/homebrew/opt/openjdk/bin:$HOME/Softwares/flutter/bin:$PATH:/opt/homebrew/bin:
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '$HOME/softwares/google-cloud-sdk/path.bash.inc' ]; then . '$HOME/softwares/google-cloud-sdk/path.bash.inc'; fi
+if [ -f '$HOME/Softwares/google-cloud-sdk/path.bash.inc' ]; then . '$HOME/Softwares/google-cloud-sdk/path.bash.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '$HOME/softwares/google-cloud-sdk/completion.bash.inc' ]; then . '$HOME/softwares/google-cloud-sdk/completion.bash.inc'; fi
+if [ -f '$HOME/Softwares/google-cloud-sdk/completion.bash.inc' ]; then . '$HOME/Softwares/google-cloud-sdk/completion.bash.inc'; fi
 
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 # Google Artifactory settings for publishing images
